@@ -17,3 +17,6 @@
 
 /* Larger studio mark, retaining its position beside the hero text */
 @media(min-width:751px){.hero-layout{grid-template-columns:minmax(0,1fr) minmax(380px,460px);gap:clamp(16px,2vw,30px)}.hero-logo{max-width:460px;width:100%;transform:scale(1.7);transform-origin:center center;position:relative;z-index:1;pointer-events:none}}
+
+/* Nudge the enlarged logo slightly right without moving the headline */
+@media(min-width:751px){.hero-logo{translate:32px 0}}
