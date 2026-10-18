@@ -10,3 +10,7 @@
 .hero-layout{grid-template-columns:minmax(0,1fr) 260px;gap:38px}
 .hero-logo{width:100%;max-width:260px;max-height:240px;object-fit:contain;align-self:center}
 @media(max-width:750px){.hero-layout{grid-template-columns:1fr;gap:22px}.hero-logo{width:min(58vw,220px);max-height:200px}}
+
+/* Final balanced side-by-side hero treatment */
+@media(min-width:751px){.hero-layout{grid-template-columns:minmax(0,1fr) minmax(300px,380px);gap:clamp(22px,3vw,46px)}.hero-logo{width:100%;max-width:380px;max-height:none;align-self:center}.hero-layout h1{font-size:clamp(3rem,5.4vw,5.7rem)}}
+@media(max-width:750px){.hero-logo{width:min(78vw,320px);max-width:320px;max-height:none}}
