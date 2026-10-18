@@ -14,3 +14,6 @@
 /* Final balanced side-by-side hero treatment */
 @media(min-width:751px){.hero-layout{grid-template-columns:minmax(0,1fr) minmax(300px,380px);gap:clamp(22px,3vw,46px)}.hero-logo{width:100%;max-width:380px;max-height:none;align-self:center}.hero-layout h1{font-size:clamp(3rem,5.4vw,5.7rem)}}
 @media(max-width:750px){.hero-logo{width:min(78vw,320px);max-width:320px;max-height:none}}
+
+/* Larger studio mark, retaining its position beside the hero text */
+@media(min-width:751px){.hero-layout{grid-template-columns:minmax(0,1fr) minmax(380px,460px);gap:clamp(16px,2vw,30px)}.hero-logo{max-width:460px;width:100%;transform:scale(1.7);transform-origin:center center;position:relative;z-index:1;pointer-events:none}}
